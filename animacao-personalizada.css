@@ -1,0 +1,58 @@
+.rotacao{
+    animation: rodar 8s ease-in-out infinite alternate;
+}
+
+@keyframes rodar{
+    0%{
+        transform: rotate(0deg);
+
+    }
+
+    80%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.aumenta-e-sobe{
+animation: aumenta-e-sobe 4s ease infinite alternate;
+}
+
+@keyframes aumenta-e-sobe{
+    0%{
+    transform: scale(1) translate(0px, 0px);
+    }
+    80%{
+        filter: brightness(1);
+
+    }
+    100%{
+        transform: scale(1.2) translate(0px, -44px);
+        filter: brightness(1.4);
+    }
+}
+
+.mostra-e-foca-4s{
+animation: mostra-e-foca 4s ease infinite alternate;
+
+}
+.mostra-e-foca-6s{
+    animation: mostra-e-foca 6s ease infinite alternate;
+    
+    }
+
+@keyframes mostra-e-foca{
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+80%{ 
+   filter: blur(0px);
+
+}
+    100%{
+        opacity: 1;
+    }
+}
